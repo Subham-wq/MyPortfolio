@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        background-color: #333;
+        width: 100%;
+        transition: left 0.3s ease-in;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .logo a {
+        font-size: 32px;
+    }
+}
+
+.logo img {
+    width: 1%;
+}
+/* Your existing CSS rules here */
+
+.navbar {
+    /* Your existing navbar styles */
+    /* Ensure there's some space at the bottom to accommodate the contact details */
+    margin-bottom: 20px;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /*background-image: url("Images/physics.jpg");*/
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+}
+.cv-download {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 50px; /* Add some space from the top */
+}
+
+.cv-download a {
+    display: inline-block; /* Make the link a block-level element */
+    padding: 15px 30px; /* Add padding to make it more clickable */
+    background-color: #333; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none;
+    border-radius: 8px; /* Add rounded corners */
+    font-size: 20px;
+    font-weight: bold;
+}
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-left {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.content-right {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.content-right img {
+    max-width: 100%;
+    height: auto;
+}
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.language-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.language-list li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.content-right {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.Name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    border: 1px solid black;
+  }
+  
+  .Name h1 {
+    font-style: italic;
+    color: grey;
+  }
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .centered-container p {
+    text-align: center;
+    border: 2px solid #333;
+    padding: 20px;
+  }
+  

@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        background-color: #333;
+        width: 100%;
+        transition: left 0.3s ease-in;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .logo a {
+        font-size: 32px;
+    }
+}
+
+.logo img {
+    width: 2%;
+}
+/* Your existing CSS rules here */
+
+.navbar {
+    /* Your existing navbar styles */
+    /* Ensure there's some space at the bottom to accommodate the contact details */
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    text-align: center; /* Center the contact links */
+    padding: 20px; /* Add some spacing around the contact links */
+    background-color: #333; /* Background color for the contact section */
+}
+
+.contact-details a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px; /* Adjust the font size as needed */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("Images/physics.jpg");
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+}
